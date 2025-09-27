@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>samarth13t</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23ebebeb'/%3E%3Crect x='8' y='8' width='16' height='16' fill='%230d0d0d'/%3E%3C/svg%3E" />
+  <script>
+    // Set theme instantly before page renders
+    (function() {
+      var mode = localStorage.getItem('mode');
+      if (mode === 'light') {
+        document.documentElement.classList.add('light-mode');
+        document.body.classList.add('light-mode');
+      }
+    })();
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Samarth Tilekar</h1>
+    <div class="image-wrapper">
+      <img src="assets/IMG_0728.JPG" alt="Main" class="main-image" />
+    </div>
+    <nav class="nav">
+      <a href="about.html">about</a>
+      <span>//</span>
+      <a href="projects.html">projects</a>
+      <span>//</span>
+      <a href="contact.html">say hi</a>
+    </nav>
+  </div>
+  <div id="mode-toggle" class="toggle-switch" aria-label="Toggle light/dark mode">
+    <div class="toggle-track">
+      <div class="toggle-thumb"></div>
+    </div>
+  </div>
+
+  <div class="clock-widget brutal-clock" id="pune-clock"></div>
+  <script src="script.js"></script>
+</body>
+</html>
